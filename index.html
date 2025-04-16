@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sachin Ranjit | Portfolio</title>
+  <link rel="icon" type="image/jpeg" href="demonichalo.jpg" />
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script defer src="script.js"></script>
+</head>
+<body class="bg-gray-100 text-gray-900 font-sans scroll-smooth">
+
+  <!-- Hero Section -->
+  <section class="min-h-screen bg-gray-900 text-white flex items-center justify-center">
+    <div class="text-center px-6">
+      <div class="flex justify-center mb-6 perspective">
+        <img id="profile-pic" src="demonichalo.jpg"
+             alt="Profile"
+             class="rounded-full w-32 h-32 object-cover border-4 border-cyan-400 transition-transform duration-500 transform" />
+      </div>
+
+      <h1 class="text-4xl md:text-6xl font-bold mb-4">Hi, I'm <span class="text-cyan-400">Sachin Ranjit</span></h1>
+      <p class="text-lg md:text-2xl mb-6">Computer Science Student • Full-Stack MERN Dev in Making • Data Enthusiast</p>
+      <div class="flex flex-wrap justify-center gap-4 text-sm sm:text-base">
+        <a href="#about" class="text-cyan-400 hover:underline">About</a>
+        <a href="#projects" class="text-cyan-400 hover:underline">Projects</a>
+        <a href="#skills" class="text-cyan-400 hover:underline">Skills</a>
+        <a href="#certifications" class="text-cyan-400 hover:underline">Certifications</a>
+        <a href="#achievements" class="text-cyan-400 hover:underline">Achievements</a>
+        <a href="#socials" class="text-cyan-400 hover:underline">Socials</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="py-16 px-6 md:px-20 relative overflow-hidden">
+    <div class="absolute inset-0 bg-[url('pool.jpg')] bg-cover bg-center z-0">
+      <div class="absolute inset-0 bg-black/30 backdrop-blur-[2px]"></div>
+    </div>
+    <div class="max-w-6xl mx-auto relative z-10">
+      <h2 class="section-title text-3xl font-semibold mb-6 text-white drop-shadow-md">About Me</h2>
+      <div class="about-card bg-white/90 backdrop-blur-sm">
+        <p class="text-lg leading-relaxed">
+          I’m a motivated Computer Science student at IIMS College (affiliated with Taylor’s University), passionate about full-stack WEB development, data handling, and building real-world solutions. I’m eager to gain hands-on experience and contribute meaningfully to tech projects.
+ 
+   
+        </p>
+        <div class="mt-6 grid md:grid-cols-2 gap-6">
+          <div>
+            <h3 class="text-xl font-medium text-cyan-600 mb-3 flex items-center">
+              <i data-lucide="graduation-cap" class="mr-2"></i> Education
+            </h3>
+            <p class="text-gray-700">IIMS College (Taylor's University)<br>Bachelor's in Computer Science</p>
+          </div>
+          <div>
+            <h3 class="text-xl font-medium text-cyan-600 mb-3 flex items-center">
+              <i data-lucide="heart" class="mr-2"></i> Interests
+            </h3>
+            <p class="text-gray-700">Web Development, Data Science, Machine Learning, UI/UX Design</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="py-16 px-6 md:px-20 bg-gradient-to-br from-cyan-50 to-blue-50">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="section-title text-3xl font-semibold text-center mb-12">
+        <i data-lucide="award" class="inline mr-2"></i> Skills
+      </h2>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Frontend Skills -->
+        <div class="skill-category bg-white/80 hover:bg-white">
+          <h3 class="flex items-center">
+            <i data-lucide="layout" class="mr-2"></i> Frontend Development
+          </h3>
+          <div class="skill-item">
+            <i data-lucide="code" class="skill-icon"></i>
+            <span>HTML, CSS, JavaScript</span>
+          </div>
+          <div class="skill-item">
+            <i data-lucide="react" class="skill-icon"></i>
+            <span>React.js</span>
+          </div>
+          <div class="skill-item">
+            <i data-lucide="wind" class="skill-icon"></i>
+            <span>Tailwind CSS</span>
+          </div>
+        </div>
+
+        <!-- Backend Skills -->
+        <div class="skill-category bg-white/80 hover:bg-white">
+          <h3 class="flex items-center">
+            <i data-lucide="server" class="mr-2"></i> Backend Development
+          </h3>
+          <div class="skill-item">
+            <i data-lucide="nodejs" class="skill-icon"></i>
+            <span>Node.js, Express</span>
+          </div>
+          <div class="skill-item">
+            <i data-lucide="database" class="skill-icon"></i>
+            <span>MongoDB, MySQL</span>
+          </div>
+          <div class="skill-item">
+            <i data-lucide="java" class="skill-icon"></i>
+            <span>Java (Spring Boot)</span>
+          </div>
+        </div>
+
+        <!-- Data Science -->
+        <div class="skill-category bg-white/80 hover:bg-white">
+          <h3 class="flex items-center">
+            <i data-lucide="line-chart" class="mr-2"></i> Data Science
+          </h3>
+          <div class="skill-item">
+            <i data-lucide="python" class="skill-icon"></i>
+            <span>Python, R</span>
+          </div>
+          <div class="skill-item">
+            <i data-lucide="bar-chart-2" class="skill-icon"></i>
+            <span>Data Visualization</span>
+          </div>
+          <div class="skill-item">
+            <i data-lucide="brain" class="skill-icon"></i>
+            <span>Machine Learning</span>
+          </div>
+        </div>
+
+        <!-- UI/UX -->
+        <div class="skill-category bg-white/80 hover:bg-white">
+          <h3 class="flex items-center">
+            <i data-lucide="pen-tool" class="mr-2"></i> UI/UX Design
+          </h3>
+          <div class="skill-item">
+            <i data-lucide="figma" class="skill-icon"></i>
+            <span>Figma</span>
+          </div>
+          <div class="skill-item">
+            <i data-lucide="image" class="skill-icon"></i>
+            <span>Illustrator</span>
+          </div>
+          <div class="skill-item">
+            <i data-lucide="layout" class="skill-icon"></i>
+            <span>Balsamiq</span>
+          </div>
+        </div>
+
+        <!-- Other Skills -->
+        <div class="skill-category bg-white/80 hover:bg-white">
+          <h3 class="flex items-center">
+            <i data-lucide="tool" class="mr-2"></i> Other Skills
+          </h3>
+          <div class="skill-item">
+            <i data-lucide="file-text" class="skill-icon"></i>
+            <span>Microsoft Office</span>
+          </div>
+          <div class="skill-item">
+            <i data-lucide="users" class="skill-icon"></i>
+            <span>Team Leadership</span>
+          </div>
+          <div class="skill-item">
+            <i data-lucide="message-square" class="skill-icon"></i>
+            <span>Communication</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="py-16 px-6 md:px-20 bg-white relative">
+    <div class="absolute inset-x-0 top-0 h-16 bg-[url('trophy-banner.jpg')] bg-cover bg-center opacity-30"></div>
+    <div class="max-w-6xl mx-auto relative">
+      <h2 class="section-title text-3xl font-semibold text-center mb-12">
+        <i data-lucide="trophy" class="inline mr-2 text-yellow-500"></i> Projects
+      </h2>
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="project-card hover:border-cyan-400">
+          <h3 class="text-xl font-medium mb-2 flex items-center">
+            <i data-lucide="brain" class="mr-2 text-cyan-600"></i> Mental Health Help Web App
+          </h3>
+          <p class="text-sm mb-2">A mental health support platform using HTML, CSS, and JS.</p>
+          <a href="https://demonichalo.github.io/DemonicHalo-SachinRanjit0355661-Webdev_Mental_Health_Help_App/" target="_blank" class="text-cyan-600 hover:underline flex items-center">
+            <i data-lucide="external-link" class="w-4 h-4 mr-1"></i> Live Demo
+          </a>
+        </div>
+        <div class="project-card hover:border-cyan-400">
+          <h3 class="text-xl font-medium mb-2 flex items-center">
+            <i data-lucide="package" class="mr-2 text-cyan-600"></i> Inventory Management System
+          </h3>
+          <p class="text-sm">Led development of a full inventory web app with analytics and DBMS.</p>
+        </div>
+        <div class="project-card hover:border-cyan-400">
+          <h3 class="text-xl font-medium mb-2 flex items-center">
+            <i data-lucide="cloud" class="mr-2 text-cyan-600"></i> Climate Change Impact Prediction
+          </h3>
+          <a href="https://github.com/DemonicHalo/Climate-Change-Data-Analysis" target="_blank" class="text-cyan-600 hover:underline flex items-center">
+            <i data-lucide="github" class="w-4 h-4 mr-1"></i> GitHub
+          </a>
+        </div>
+        <div class="project-card hover:border-cyan-400">
+          <h3 class="text-xl font-medium mb-2 flex items-center">
+            <i data-lucide="film" class="mr-2 text-cyan-600"></i> Movie Recommendation System
+          </h3>
+          <a href="https://github.com/DemonicHalo/Movie-Recommendation-System-using-the-K-Nearest-Neighbors-KNN-algorit" target="_blank" class="text-cyan-600 hover:underline flex items-center">
+            <i data-lucide="github" class="w-4 h-4 mr-1"></i> GitHub
+          </a>
+        </div>
+        <div class="project-card hover:border-cyan-400">
+          <h3 class="text-xl font-medium mb-2 flex items-center">
+            <i data-lucide="heart-pulse" class="mr-2 text-cyan-600"></i> Heart Disease Prediction
+          </h3>
+          <a href="https://github.com/DemonicHalo/-Heart-Disease-Exploratory-Data-Analysis-" target="_blank" class="text-cyan-600 hover:underline flex items-center">
+            <i data-lucide="github" class="w-4 h-4 mr-1"></i> GitHub
+          </a>
+        </div>
+        <div class="project-card hover:border-cyan-400">
+          <h3 class="text-xl font-medium mb-2 flex items-center">
+            <i data-lucide="plane" class="mr-2 text-cyan-600"></i> Flight Delay Prediction
+          </h3>
+          <a href="https://github.com/DemonicHalo/Flight-Delay-Prediction-EDA" target="_blank" class="text-cyan-600 hover:underline flex items-center">
+            <i data-lucide="github" class="w-4 h-4 mr-1"></i> GitHub
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certifications -->
+  <section id="certifications" class="py-16 px-6 md:px-20 bg-gray-100 relative">
+    <div class="absolute inset-x-0 top-0 h-16 bg-[url('crown-banner.jpg')] bg-cover bg-center opacity-30"></div>
+    <div class="max-w-6xl mx-auto relative">
+      <h2 class="section-title text-3xl font-semibold text-center mb-12">
+        <i data-lucide="crown" class="inline mr-2 text-yellow-500"></i> Certifications
+      </h2>
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="certification-card hover:border-cyan-400">
+          <h3 class="text-xl font-medium text-cyan-600 mb-2 flex items-center">
+            <i data-lucide="certificate" class="mr-2"></i> MERN Stack
+          </h3>
+          <p class="text-gray-700">Mindrisers Institute of Technology (2024)</p>
+        </div>
+        <div class="certification-card hover:border-cyan-400">
+          <h3 class="text-xl font-medium text-cyan-600 mb-2 flex items-center">
+            <i data-lucide="cloud" class="mr-2"></i> AWS Cloud Practitioner
+          </h3>
+          <p class="text-gray-700">Amazon Web Services (2022)</p>
+        </div>
+        <div class="certification-card hover:border-cyan-400">
+          <h3 class="text-xl font-medium text-cyan-600 mb-2 flex items-center">
+            <i data-lucide="network" class="mr-2"></i> Networking Essentials
+          </h3>
+          <p class="text-gray-700">CISCO (2022)</p>
+        </div>
+        <div class="certification-card hover:border-cyan-400">
+          <h3 class="text-xl font-medium text-cyan-600 mb-2 flex items-center">
+            <i data-lucide="coffee" class="mr-2"></i> Java Programming
+          </h3>
+          <p class="text-gray-700">Broadway Infosys (2021)</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Achievements -->
+  <section id="achievements" class="py-16 px-6 md:px-20 bg-white relative">
+    <div class="absolute inset-0 bg-[url('achievement-bg.jpg')] bg-cover bg-center opacity-10"></div>
+    <div class="max-w-6xl mx-auto relative">
+      <h2 class="section-title text-3xl font-semibold text-center mb-12">
+        <i data-lucide="medal" class="inline mr-2 text-yellow-500"></i> Achievements
+      </h2>
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="achievement-card hover:border-yellow-400">
+          <h3 class="text-xl font-medium text-cyan-600 mb-2 flex items-center">
+            <i data-lucide="award" class="mr-2"></i> Core Organizer
+          </h3>
+          <p class="text-gray-700">IIMS Typing Competition (Feb 13, 2023)</p>
+        </div>
+        <div class="achievement-card hover:border-yellow-400">
+          <h3 class="text-xl font-medium text-cyan-600 mb-2 flex items-center">
+            <i data-lucide="leaf" class="mr-2"></i> Social Innovation Project
+          </h3>
+          <p class="text-gray-700">Bird Conservation at IIMS (July 5, 2023)</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Socials -->
+  <section id="socials" class="py-16 px-6 md:px-20 bg-gradient-to-br from-blue-900 to-cyan-900 text-white">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="section-title text-3xl font-semibold text-center mb-12">
+        <i data-lucide="handshake" class="inline mr-2"></i> Connect With Me
+      </h2>
+      <div class="flex flex-wrap justify-center gap-10">
+        <a href="https://www.instagram.com/demonic_halo.19/" target="_blank" class="social-link hover:text-pink-400">
+          <div class="social-icon bg-gradient-to-br from-pink-500 to-purple-600">
+            <i data-lucide="instagram" class="w-8 h-8"></i>
+          </div>
+          <span class="text-sm mt-2">Instagram</span>
+        </a>
+        <a href="https://www.facebook.com/sachin.ranjit.18" target="_blank" class="social-link hover:text-blue-400">
+          <div class="social-icon bg-gradient-to-br from-blue-600 to-blue-800">
+            <i data-lucide="facebook" class="w-8 h-8"></i>
+          </div>
+          <span class="text-sm mt-2">Facebook</span>
+        </a>
+        <a href="https://www.linkedin.com/in/sachin-ranjit-b38b80224/" target="_blank" class="social-link hover:text-blue-300">
+          <div class="social-icon bg-gradient-to-br from-blue-500 to-blue-700">
+            <i data-lucide="linkedin" class="w-8 h-8"></i>
+          </div>
+          <span class="text-sm mt-2">LinkedIn</span>
+        </a>
+        <a href="https://github.com/DemonicHalo" target="_blank" class="social-link hover:text-gray-300">
+          <div class="social-icon bg-gradient-to-br from-gray-700 to-gray-900">
+            <i data-lucide="github" class="w-8 h-8"></i>
+          </div>
+          <span class="text-sm mt-2">GitHub</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white text-center py-6">
+    <div class="max-w-6xl mx-auto">
+      <p>&copy; 2025 Sachin Ranjit. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
