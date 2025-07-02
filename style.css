@@ -211,3 +211,10 @@ body {
 .animate-fadeIn {
   animation: fadeIn 0.6s ease forwards;
 }
+
+/* Projects Section Background */
+.projects-background {
+  background-image: url('https://www.toptal.com/designers/subtlepatterns/patterns/white-paper.png'); /* Example pattern */
+  background-color: rgba(255, 255, 255, 0.8); /* Fallback color */
+  background-blend-mode: overlay; /* Blend the pattern with a white background */
+}
